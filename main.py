@@ -350,7 +350,7 @@ class Cell():
 
         self.button = Button(puzzle.puzzle_grid, textvariable = self._Symbol, font = "Arial 20", bg = "#3c4043", fg = "#e8eaed",
         command= lambda: puzzle.MyPuzzle.AttemptPuzzle(self.index))
-        self.button.place(x=((index % puzzle.grid_size+1)*puzzle.gridsizes[puzzle.grid_size-4][3])-puzzle.gridsizes[puzzle.grid_size-4][1], y=((index // puzzle.grid_size+1)*puzzle.gridsizes[puzzle.grid_size-4][4])-puzzle.gridsizes[puzzle.grid_size-4][2])
+        self.button.place(x=((index % puzzle.grid_size+1)*puzzle.gridsizes[puzzle.grid_size-5][3])-puzzle.gridsizes[puzzle.grid_size-5][1], y=((index // puzzle.grid_size+1)*puzzle.gridsizes[puzzle.grid_size-5][4])-puzzle.gridsizes[puzzle.grid_size-5][2])
 
 
     def CheckAllowed(self):
@@ -389,7 +389,7 @@ class BlockedCell(Cell):
         self._Symbol.set("@")
 
         self.button = Label(puzzle.puzzle_grid, text="X", font = "Arial 20", bg = "#3c4043", fg = "#e8eaed"
-        ).place(x=((index % puzzle.grid_size+1)*puzzle.gridsizes[puzzle.grid_size-4][3])-puzzle.gridsizes[puzzle.grid_size-4][1], y=((index // puzzle.grid_size+1)*puzzle.gridsizes[puzzle.grid_size-4][4])-puzzle.gridsizes[puzzle.grid_size-4][2])
+        ).place(x=((index % puzzle.grid_size+1)*puzzle.gridsizes[puzzle.grid_size-5][3])-puzzle.gridsizes[puzzle.grid_size-5][1], y=((index // puzzle.grid_size+1)*puzzle.gridsizes[puzzle.grid_size-5][4])-puzzle.gridsizes[puzzle.grid_size-5][2])
 
 
     def get(self):
