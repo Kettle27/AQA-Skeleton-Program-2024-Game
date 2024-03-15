@@ -425,7 +425,7 @@ def start_again():
 
     root.destroy()
 
-    os.system('python SkelProg2.py')
+    os.system('python main.py')
 
 
 
